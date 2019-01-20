@@ -1,0 +1,39 @@
+This is my attempt at the Shopify Mobile Developer challenge. Unfortunately, due to time restraints with having regular school assignments, my other applications, and the time it 
+took for me to learn some of the technologies used, I do not have a finished product to demonstrate. 
+
+Some of the things I did manage to accomplish however, include:
+- Learning how Retrofit, OkHttps, and Volley work
+- Increasing my proficiency with JSON and APIs
+- Increasing my proficiency with RecyclerViews, and understanding how to change each individual layout
+- How to document code better and use Log messages more effectively
+- Becoming more patient, especially with DEBUGGING
+- Not becoming fixated on having to create a solution in only one way, and trying another method should productivity and morale begin to decrease
+
+Factors contributing to me not successfully finishing the challenge:
+- Unfamiliarity in tools (I started with Retrofit and was unsuccessful, later switching to Volley)
+- Rustiness in Android programming (since my primary focus for the past few months have been school)
+- Silly oversights (trying to make an API call without giving internet permissions, making methods for and working with the wrong class, etc.)
+- Time constraints (I found about the challenge very recently and only started it on Thursday night, once the bulk of my schoolwork was done)
+
+I do think that I could have used time more effectively in a few methods, namely by planning out my process better and conducting basic research on what would be the most
+effective tools and methods to use. However, I am quite glad that I was able to learn so much, despite not finishing the challenge.
+
+That being said, I would like to explain my thought process on finishing the rest of the challenge in lieu of programming it. I found the most success with OkHttps and Volley,
+although I think using OkHttps and GSON would have been the best way of taking the JSON response and turning it into an object. I still would have used RecyclerViews, although
+a ListView could also work.
+
+- 2 kinds of API calls should have been made:
+	- The first API call gets the name of each collection - easiest thing to do is store each name in an Array/ArrayList and set the TextViews in the RecyclerView to 
+	  each of their values, since the first task only involves putting the name in the view. From there, onClickListeners can be set to buttons to take us to the next activity
+	  (content depends on which button is pressed, which would do the next API call from a corresponding ID)
+	- The second API call depends on which collection is accessed, and should get basic information for all products in that collection. A lot more storage comes into play
+	  here, with the need to make an ArrayList of Product objects corresponding to the JSON response array that would be displayed in the Recyclerview. I had difficulty
+	  in this section since I wasn't sure on how to display everything, especially regarding the inventory. The collection title could be passed along from the first API call,
+	  and the product name and image could be taken from the JSON response without much difficulty. Regarding the item inventory, I believe using a for loop to sum the
+	  inventories across all variants from product.getVariants() would have gotten the total inventory. 
+
+Overall, I really enjoyed trying my hand at the challenge. It was definitely a task that was not within my comfort zone, but because of that, my persistence enabled me to
+learn a lot and further advance my skills as a mobile developer. Most importantly, this challenge has furthered the realization that I enjoy mobile/Android development, and that
+it is something I would like to pursue as a career, hopefully with Shopify!
+
+-William King
