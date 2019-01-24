@@ -170,11 +170,11 @@ public class MainActivity extends AppCompatActivity {
 //
 //            @Override
 //            public void onFailure(Call<List<Collect>> call, Throwable t) {
-//                Log.d("ERROR", t.getMessage());
+//                Log.e("ERROR", t.getMessage());
 //            }
 //        });
 //        try {
-//            Log.d("ERROR", getCollectResponse("68424466488").get(0).getId().toString());
+//            Log.e("ERROR", getCollectResponse("68424466488").get(0).getId().toString());
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //            System.out.println("oh no");
